@@ -21,7 +21,10 @@ export default class Home extends Vue {}
 
 <style scoped lang="scss">
 .home {
-   display: flex;
-
+    display: flex;
+    justify-items: flex-start;
+    border: 1px solid red;
+    width: 100%;
+    min-width: 600px;
 }
 </style>

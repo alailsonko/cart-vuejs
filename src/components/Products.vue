@@ -1,8 +1,12 @@
 <template>
   <section class="section-product">
-    <ul>
-      <li v-for="product in products" :key="product.id">
-        {{ product.title }}
+    <ul class="product-list">
+      <li class="product-list-item" v-for="product in products" :key="product.id">
+        <article class="product-item">
+          <h2 class="product-title">{{product.title}}</h2>
+          <img class="product-image" :src="product.thumbnail" :alt="product.title">
+          <p><data :value="product.price">{{product.price}}</data>$</p>
+        </article>
       </li>
     </ul>
   </section>
@@ -32,9 +36,30 @@ export default class Products extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.section-category {
+.section-product {
   background: blue;
   display: flex;
+}
+.product-image {
+  width: 250px;
+  height: 250px;
+}
+.product-title {
+  font-size: 1em;
+}
+.product-item {
+  background-color: green;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  float: right;
+}
+.product-list-item {
+  width: 250px;
+  height: 400px;
+  margin: 2px;
 }
 li {
   display: flex;

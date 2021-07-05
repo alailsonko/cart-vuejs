@@ -10,4 +10,7 @@
   text-align: center;
   color: #2c3e50;
 }
+  body, ul, section {
+    margin: 0;
+  }
 </style>

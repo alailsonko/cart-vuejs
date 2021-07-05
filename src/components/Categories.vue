@@ -1,7 +1,7 @@
 <template>
   <aside class="aside-category">
-    <ul>
-      <li v-for="category in categories" :key="category.id">
+    <ul class="category-list">
+      <li class="category-item" v-for="category in categories" :key="category.id">
         <input
           type="radio"
           :id="category.id"
@@ -57,8 +57,15 @@ export default class Categories extends Vue {
 .aside-category {
   background: red;
   display: flex;
+  min-width: 270px;
 }
-li {
+.category-list {
   display: flex;
+  flex-direction: column;
 }
+.category-item {
+  display: flex;
+  padding: 0;
+}
+
 </style>
