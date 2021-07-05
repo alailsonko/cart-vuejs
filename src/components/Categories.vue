@@ -43,7 +43,7 @@ import { mapState, mapActions } from 'vuex';
   methods: {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     handleChooseCategory(e: any): void {
-      console.log(e.target.value);
+      this.$store.dispatch('products/getAllProducts', e.target.value);
     },
   },
 })
