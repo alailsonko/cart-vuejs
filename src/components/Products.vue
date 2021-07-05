@@ -6,6 +6,7 @@
           <h2 class="product-title">{{product.title}}</h2>
           <img class="product-image" :src="product.thumbnail" :alt="product.title">
           <p><data :value="product.price">{{product.price}}</data>$</p>
+          <button type="button" >Add to Cart</button>
         </article>
       </li>
     </ul>
@@ -58,7 +59,6 @@ export default class Products extends Vue {
 }
 .product-list-item {
   width: 250px;
-  height: 400px;
   margin: 2px;
 }
 li {
