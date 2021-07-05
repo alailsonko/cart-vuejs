@@ -47,7 +47,7 @@ import { mapState, mapActions } from 'vuex';
     },
   },
 })
-export default class Category extends Vue {
+export default class Categories extends Vue {
   msg!: string;
 }
 </script>
