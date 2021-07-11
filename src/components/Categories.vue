@@ -22,7 +22,6 @@ import { mapState, mapActions } from 'vuex';
 
 @Options({
   props: {
-    msg: String,
   },
   data() {
     return {
@@ -48,7 +47,6 @@ import { mapState, mapActions } from 'vuex';
   },
 })
 export default class Categories extends Vue {
-  msg!: string;
 }
 </script>
 

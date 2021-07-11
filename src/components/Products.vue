@@ -19,7 +19,6 @@ import { mapState, mapActions } from 'vuex';
 
 @Options({
   props: {
-    msg: String,
   },
   computed: {
     ...mapState({
@@ -31,7 +30,6 @@ import { mapState, mapActions } from 'vuex';
   },
 })
 export default class Products extends Vue {
-  msg!: string;
 }
 </script>
 

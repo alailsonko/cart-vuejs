@@ -1,19 +1,22 @@
 <template>
   <div class="home">
-    <Categories msg="Welcome to Your Vue.js + TypeScript App"/>
-    <Products msg="Welcome to Your Vue.js + TypeScript App"/>
+    <Categories />
+    <Products />
+    <Cart />
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import Categories from '@/components/Categories.vue'; // @ is an alias to /src
-import Products from '@/components/Products.vue'; // @ is an alias to /src
+import Categories from '@/components/Categories.vue';
+import Products from '@/components/Products.vue';
+import Cart from '@/components/Cart.vue';
 
 @Options({
   components: {
     Categories,
     Products,
+    Cart,
   },
 })
 export default class Home extends Vue {}
