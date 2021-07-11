@@ -24,7 +24,5 @@ export default class Home extends Vue {}
     display: flex;
     justify-items: flex-start;
     border: 1px solid red;
-    width: 100%;
-    min-width: 600px;
 }
 </style>
